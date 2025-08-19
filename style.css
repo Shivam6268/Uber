@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    font-family: 'Roboto' Arial, sans-serif;
+    color: black;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Desktop nav bar*/
+
+nav {
+    background-color: black;
+    padding: 15px 70px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+nav :nth-child(2) {
+    gap: 15px;
+    align-items: center;
+}
+
+nav button {
+    padding: 5px 13px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+nav .login-btn {
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+nav .nav-bars-button {
+    display: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+
+/* Desktop hero section*/
+
+#hero {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+
+.hero-first {
+    width: 40%;
+
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    margin: 13px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+    input {
+        background-color: transparent;
+        width: 70%;
+        border: none;
+    }
+}
+
+.date-time {
+    display: flex;
+    gap: 20px;
+
+    button {
+
+        width: 100%;
+        background-color: antiquewhite;
+        margin: 13px 0;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 30%;
+    padding: 14px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login {
+    font-size: 20px;
+}
+
+.hero-second{
+    width: 50%;
+
+    img{
+        width: 80%;
+    }
+}
+
+
+ /* Desktop suggestion section*/
+
+ .suggestion-section{
+    padding: 20px 50px;
+
+    h1{
+        font-size: 30px;
+        font-weight:700;
+        padding-bottom: 40px;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px
+    }
+
+    ul li{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        width: 30%;
+        background-color: antiquewhite;
+        border-radius: 20px;
+    }
+
+    ul li img{
+        width: 150px;
+    }
+
+ }
+
+ .suggestion-section li h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+ }
+
+ .suggestion-section button{
+    padding: 4px 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: none;
+ }
+
+
+ /* sections*/
+
+ .sections{
+    display: flex;
+    padding: 20px 50px;
+    margin: 60px 0;
+    align-items: center;
+
+    div{
+        width: 50%;
+    }
+ }
+
+ .sections h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+ }
+ .sections button{
+    margin-top: 30px;
+   padding: 13px 15px;
+   border: none;
+   border-radius: 5px;
+   background-color: #000;
+   color: aliceblue;
+   font-size: 15px;
+ }
+
+ .sections .anchor{
+    background-color: transparent;
+    color: #000;
+    
+ }
+
+ .sections img{
+    width: 80%;
+ }
+
+ /* footer */
+
+ footer{
+    background-color: #000;
+    min-height: 40vh;
+    padding: 40px 100px;
+    color: aliceblue;
+     
+    h1{
+        padding: 20px 0;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 20px 0;
+    }
+
+    span{
+       font-size: 13px;
+       color: #686666;
+    }
+ }
+
+ .footer-first{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+ }
+
+ footer button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    gap: 10px;
+ }
+
+ /* app download section*/
+
+ .app-download-container{
+    background-color: antiquewhite;
+    min-height: 30vh;
+    padding: 30px 150px;
+ }
+
+ .app-download{
+    gap: 30px;
+ }
+ .bar-code-section{
+    background-color: white;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    img{
+        width: 200px;
+    }
+
+    span{
+        font-size: 20px;
+        color: #686666;
+        font-weight: 500;
+    }
+
+ }
+
+@media screen and (max-width: 768px) {
+
+    /* 768px nav bar*/
+    nav {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav :nth-child(2) p {
+        display: none;
+    }
+
+    nav .nav-bars-button {
+        display: block;
+    }
+
+     /* 768px Hero section*/
+
+    #hero{
+        padding: 40px 0;
+    }
+
+    .hero-first{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+   .hero-second{
+    display: none;
+   }
+
+   .hero-buttons{
+    flex-direction: column;
+     
+    .btn{
+        width: 100%;
+    }
+   }
+
+   /* suggetions section*/
+
+   .suggestion-section{
+    padding: 20px 10px;
+   }
+
+
+   .suggestion-section ul{
+    flex-direction: column;
+
+    li{
+        width: 100%;
+    }
+
+    li img{
+        width: 100px;
+    }
+   }
+
+   .suggestion-section h1{
+    font-size: 20px;
+   }
+
+   /*sections */
+
+   .sections{
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+
+    div{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+   }
+
+   /* app download */
+
+   .app-download-container{
+    padding: 30px 20px ;
+   }
+
+   .app-download{
+    flex-direction: column;
+   }
+
+   .bar-code-section{
+    padding: 10px;
+    gap: 30px;
+    align-items: center;
+    border-radius: 10px;
+
+    img{
+        width: 100px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    span{
+        font-size: 15px;
+    }
+
+ }
+
+
+
+   /*footer*/
+
+   footer{
+    padding: 30px 20px;
+   }
+
+   .footer-first{
+    flex-direction: column;
+    gap: 30px;
+   }
+
+}
